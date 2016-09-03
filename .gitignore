@@ -1,0 +1,20 @@
+blog/.mvn/
+blog/target/
+
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+frontend_blog/blog/dist
+frontend_blog/blog/tmp
+
+# dependencies
+frontend_blog/blog/node_modules
+frontend_blog/blog/bower_components
+
+# misc
+frontend_blog/blog/.sass-cache
+frontend_blog/blog/connect.lock
+frontend_blog/blog/coverage/*
+frontend_blog/blog/libpeerconnection.log
+frontend_blog/blognpm-debug.log
+frontend_blog/blogtestem.log

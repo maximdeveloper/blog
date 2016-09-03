@@ -1,0 +1,11 @@
+<ul id="nav-mobile" class="side-nav fixed">
+  <li>{{#link-to "welcome"}}Welcome{{/link-to}}</li>
+  <li>{{#link-to "aboutme"}}About me{{/link-to}}</li>
+  <li><button {{action 'open'}}>Blog</button>
+    {{#if isOpen}}
+    <ul>
+      <li>{{#link-to "journals"}}Blog{{/link-to}}</li>
+    </ul>
+    {{/if}}
+  </li>
+</ul>

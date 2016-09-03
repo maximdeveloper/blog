@@ -1,0 +1,23 @@
+header, footer {
+    padding-left: 100px;
+}
+
+main {
+  padding-left: 150px;
+}
+
+.side-nav {
+  width: 200px;
+  padding-top: 100px;
+}
+
+ul#nav-mobile li a {
+  font-size: 14px;
+  height: 35px;
+  line-height: 35px;
+}
+
+li.active a, li.active a:hover {
+  color: #fff !important;
+  background-color: #66a3c1;
+}

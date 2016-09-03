@@ -1,0 +1,30 @@
+{{top-nav title="Blog page"}}
+
+<div class="container">
+<a class="waves-effect waves-light btn" {{action 'createRecord'}}>Create</a>
+<table>
+  <thead>
+    <tr>
+      <th data-field="id">Id</th>
+      <th data-field="id">Title</th>
+      <th data-field="id">Summary</th>
+      <th data-field="id">Created</th>
+      <th data-field="id">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each model as |journal|}}
+      <tr>
+        <td>{{journal.id}}</td>
+        <td>{{journal.title}}</td>
+        <td>{{journal.summary}}</td>
+        <td>{{journal.created}}</td>
+        <td>
+          <a class="waves-effect waves-light btn" {{action 'deleteRecord' journal.id}}>Delete</a>
+          <a class="waves-effect waves-light btn" {{action 'updateRecord'}}>Update</a>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+</div>
