@@ -19,5 +19,10 @@ ul#nav-mobile li a {
 
 li.active a, li.active a:hover {
   color: #fff !important;
+  background-color: #a4c8da;
+}
+
+nav.top-nav {
   background-color: #66a3c1;
+  font-size: 25px;
 }
