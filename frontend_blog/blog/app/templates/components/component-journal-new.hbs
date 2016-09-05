@@ -1,0 +1,17 @@
+<div class="container">
+  <div id="form" class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          {{input id="title" value=title type="text" class="validate"}}
+          <label for="title">Title</label>
+        </div>
+        <div class="input-field col s12">
+          {{input id="summary" value=summary type="text" class="validate"}}
+          <label for="summary">Summary</label>
+        </div>
+      </div>
+      <a class="waves-effect waves-light btn" {{action 'createRecord'}}>Create new note</a>
+    </form>
+  </div>
+</div>

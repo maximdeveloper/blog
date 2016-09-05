@@ -32,5 +32,7 @@ export default Ember.Component.extend({
       var newSelectedElement = this.getById(this.get('currentElement').id);
       $(newSelectedElement).closest('li').addClass('active');
     }
+//change route -> sideNav will hide
+    $('.button-collapse').sideNav('hide');
   }
 });

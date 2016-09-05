@@ -7,18 +7,11 @@ export default Ember.Route.extend({
 
   actions: {
     createRecord() {
-      var journal = this.store.createRecord('journal', {
-        title: 'Rails is Omakase',
-        summary: 'Lorem ipsum',
-        created: '03/03/2016'
-      });
-      journal.save();
+      this.transitionTo('/journal/new');
     },
 
-    deleteRecord(value) {
-      this.store.findRecord('journal', value, { backgroundReload: false }).then(function (post) {
-        post.destroyRecord(); // => DELETE to /posts/2
-      });
+    editRecord(id) {
+      this.transitionTo(`/journal/${id}`);
     }
   }
 });

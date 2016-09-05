@@ -8,9 +8,9 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('welcome', {path: '/'});//welcome page
   this.route('aboutme', {path: '/aboutme'});//aboutme page
-  this.route('journals', {path: '/journals', resetNamespace: true}, function() {
-    this.route('journal', {path: ':journal_id'});//journal.hbs, journal.js
-  });//journals.hbs, journals.js
+  this.route('journals', {path: '/journals'});//journals.hbs, journals.js
+  this.route('journal-new', {path: '/journal/new'});
+  this.route('journal-edit', {path: '/journal/:journal_id'});//journal.hbs, journal.js
 });
 
 export default Router;

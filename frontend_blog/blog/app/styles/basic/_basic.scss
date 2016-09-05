@@ -26,3 +26,23 @@ nav.top-nav {
   background-color: #66a3c1;
   font-size: 25px;
 }
+
+a.secondary-content, a.top-nav {
+  cursor: pointer;
+}
+
+ul.custom {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+#form {
+  padding-top: 50px;
+}
+
+@media #{$medium-and-down} {
+  header, main, footer {
+      padding-left: 0;
+  }
+}

@@ -1,30 +1,13 @@
 {{top-nav title="Blog page"}}
-
 <div class="container">
-<a class="waves-effect waves-light btn" {{action 'createRecord'}}>Create</a>
-<table>
-  <thead>
-    <tr>
-      <th data-field="id">Id</th>
-      <th data-field="id">Title</th>
-      <th data-field="id">Summary</th>
-      <th data-field="id">Created</th>
-      <th data-field="id">Actions</th>
-    </tr>
-  </thead>
-  <tbody>
-    {{#each model as |journal|}}
-      <tr>
-        <td>{{journal.id}}</td>
-        <td>{{journal.title}}</td>
-        <td>{{journal.summary}}</td>
-        <td>{{journal.created}}</td>
-        <td>
-          <a class="waves-effect waves-light btn" {{action 'deleteRecord' journal.id}}>Delete</a>
-          <a class="waves-effect waves-light btn" {{action 'updateRecord'}}>Update</a>
-        </td>
-      </tr>
-    {{/each}}
-  </tbody>
-</table>
+  <div class="row">
+    <ul class="custom collection">
+      <li class="collection-item center">
+        <a class="waves-effect waves-light btn" {{action 'createRecord'}}>Create new one</a>
+      </li>
+      {{#each model as |journal|}}
+        <li class="collection-item">{{component-journals journal=journal editRecord="editRecord" createRecord="createRecord"}}</li>
+      {{/each}}
+    </ul>
+  </div>
 </div>
