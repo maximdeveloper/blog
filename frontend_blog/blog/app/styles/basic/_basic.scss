@@ -1,9 +1,13 @@
 header, footer {
-    padding-left: 100px;
+  padding-left: 100px;
 }
 
 main {
   padding-left: 150px;
+  flex: 1 0 auto;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 .side-nav {
@@ -45,4 +49,45 @@ ul.custom {
   header, main, footer {
       padding-left: 0;
   }
+}
+
+.alert-success {
+  color: #fff;
+  background-color: #43ac6a;
+  border-color: #3a945b;
+  a.close {
+    color: #fff;
+  }
+}
+
+.alert-success {
+  color: #fff;
+  background-color: #43ac6a;
+  border-color: #3a945b;
+  a.close {
+    color: #fff;
+  }
+}
+
+.alert-warning {
+  color: #fff;
+  background-color: #ee6e73;
+  border-color: #ec6066;
+  a.close {
+    color: #fff;
+  }
+}
+
+.alert-info {
+  color: #fff;
+  background-color: #f08a24;
+  border-color: #de770f;
+  a.close {
+    color: #fff;
+  }
+}
+
+.card-panel {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }

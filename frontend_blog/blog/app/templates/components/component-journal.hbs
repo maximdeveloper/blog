@@ -1,6 +1,8 @@
 <div class="container">
-  <h2>{{journal.title}}</h2>
-  <p>{{journal.summary}}</p>
+  <div class="card-panel grey lighten-5 z-depth-1">
+    <h3>{{journal.title}}</h3>
+    <p>{{journal.summary}}</p>
+  </div>
   <a class="waves-effect waves-light btn" {{action 'back'}}>Back</a>
   <a class="waves-effect waves-light btn" {{action 'delete' journal.id}}>Delete</a>
 </div>

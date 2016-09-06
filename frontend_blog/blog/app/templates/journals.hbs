@@ -1,13 +1,13 @@
 {{top-nav title="Blog page"}}
 <div class="container">
-  <div class="row">
-    <ul class="custom collection">
-      <li class="collection-item center">
-        <a class="waves-effect waves-light btn" {{action 'createRecord'}}>Create new one</a>
-      </li>
-      {{#each model as |journal|}}
-        <li class="collection-item">{{component-journals journal=journal editRecord="editRecord" createRecord="createRecord"}}</li>
-      {{/each}}
-    </ul>
-  </div>
+<div class="row">
+  <ul class="custom collection">
+    <li class="collection-item center">
+      <a class="waves-effect waves-light btn" {{action 'createRecord'}}>Create new one</a>
+    </li>
+    {{#each model as |journal|}}
+      <li class="collection-item">{{component-journals journal=journal editRecord="editRecord" createRecord="createRecord"}}</li>
+    {{/each}}
+  </ul>
+</div>
 </div>

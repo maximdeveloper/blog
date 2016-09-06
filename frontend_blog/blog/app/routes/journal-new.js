@@ -12,10 +12,13 @@ export default Ember.Route.extend({
         summary: `${params[1]}`,
         created: '03/03/2016'
       });
-      journal.save();
-      
-      this.refresh();
-      this.transitionTo('/journals');
+      journal.save().then((journal) => {
+        this.notify.success('Note has been created');
+        this.refresh();
+        this.transitionTo('/journals');
+      }).catch(exception => {
+        this.notify.warning('Error when adding note');
+      });
     }
   }
 });
