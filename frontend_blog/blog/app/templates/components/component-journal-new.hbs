@@ -1,17 +1,19 @@
 <div class="container">
-  <div id="form" class="row">
-    <form class="col s12">
-      <div class="row">
-        <div class="input-field col s12">
-          {{input id="title" value=title type="text" class="validate"}}
-          <label for="title">Title</label>
+  <div class="card-panel grey lighten-5 z-depth-1">
+    <div id="form" class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s12">
+            {{input id="title" value=title type="text" class="validate" maxlength="50"}}
+            <label for="title">Title</label>
+          </div>
+          <div class="input-field col s12">
+            {{textarea id="summary" value=summary type="text" class="materialize-textarea validate" maxlength="200"}}
+            <label for="summary">Summary</label>
+          </div>
         </div>
-        <div class="input-field col s12">
-          {{input id="summary" value=summary type="text" class="validate"}}
-          <label for="summary">Summary</label>
-        </div>
-      </div>
-      <a class="waves-effect waves-light btn" {{action 'createRecord'}}>Create new note</a>
-    </form>
+      </form>
+    </div>
   </div>
+  <a class="waves-effect waves-light btn" {{action 'createRecord'}}>Create new note</a>
 </div>
